@@ -1,7 +1,7 @@
 # VeriMM ASPLOS Artifact
 
 
-This repository contains the artifact oft the ASPLOS'26 paper "*Managing Hardware Complexity in OS Verification*".
+This repository contains the artifact of the ASPLOS'26 paper "*Managing Hardware Complexity in OS Verification*".
 
 ## Citation
 
