@@ -1,0 +1,5 @@
+.verus
+doc
+lib.d
+verification-times-*.json
+verification-times-*.json.png

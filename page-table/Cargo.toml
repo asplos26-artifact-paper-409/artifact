@@ -1,0 +1,31 @@
+[package]
+name = "page-table"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+vstd = { path = "../.verus/source/vstd", features = [], default-features = false }
+builtin = { path = "../.verus/source/builtin" }
+
+[lib]
+path = "src/lib.rs"
+crate-type = [ "staticlib" ]
+
+[features]
+impl = []
+noreclaim = []
+linuxmodule = []
+default = ["impl"]
+
+[build]
+target = "x86_64-unknown-none"  # for no_std
+
+[profile.dev]
+panic = "abort"
+overflow-checks = false
+
+[profile.release]
+panic = "abort"
+overflow-checks = false
+opt-level = 3
+lto = true
